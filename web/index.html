@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Calculadora</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>Calculadora</h1>
+        <form action="calcula" method="GET">
+            <table border="0" cellpadding="5" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td><label for="n1">N1:</label></td>
+                        <td><input type="text" id="n1" name="n1"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="n2">N2:</label></td>
+                        <td><input type="text" id="n2" name="n2"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="operador">Operação:</label></td>
+                        <td>
+                            <select id="operador" name="operador">
+                                <option>+</option>
+                                <option>-</option>
+                                <option>*</option>
+                                <option>/</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Calcular" /></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
     </body>
 </html>
